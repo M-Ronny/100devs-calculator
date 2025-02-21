@@ -1,0 +1,32 @@
+.cal {
+    background-color: black;
+    height: 550px;
+    width: 425px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.bigScreen {
+    background-color: white;
+    width: 350px;
+    height: 100px;
+    margin: 5%;
+    margin-left: 9%;
+}
+
+button {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.firstRow,
+.secondRow, 
+.thirdRow,
+.fourthRow {
+    margin: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
