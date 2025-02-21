@@ -9,9 +9,10 @@
 .bigScreen {
     background-color: white;
     width: 350px;
-    height: 100px;
+    height: 75px;
     margin: 5%;
     margin-left: 9%;
+    margin-top: 10%;
 }
 
 button {
@@ -26,7 +27,7 @@ button {
 .secondRow, 
 .thirdRow,
 .fourthRow {
-    margin: 5%;
+    margin: 5% 10%;
     display: flex;
     justify-content: space-evenly;
 }
