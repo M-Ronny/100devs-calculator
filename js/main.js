@@ -2,7 +2,9 @@ const display = document.querySelector('.bigScreen')
 const numberInput = document.querySelectorAll('.numberBtn')
 const operationInput = document.querySelectorAll('.operationsBtn')
 const equalBtn = document.querySelector('.equal')
+const clearBtn = document.querySelector('.clearBtn')
 equalBtn.addEventListener('click', equal)
+clearBtn.addEventListener('click', clear)
 
 numberInput.forEach(button => {
     button.addEventListener('click', function(event) {
@@ -14,7 +16,7 @@ numberInput.forEach(button => {
             calculator.firstInput += value
         }
 
-         display.textContent += value
+        display.textContent += value
     })
 })
 
@@ -29,6 +31,10 @@ operationInput.forEach(button => {
 
 function equal() {
     calculator.equal(calculator.firstInput, calculator.operationInput, calculator.secondInput)
+}
+
+function clear() {
+    calculator.clear()
 }
 
 function Calculator() {
@@ -51,6 +57,13 @@ function Calculator() {
             this.secondInput = ''
         }
     }
+
+    this.clear = function() {
+        display.textContent = this.firstInput = ''
+        display.textContent = this.operationInput = ''
+        display.textContent = this.secondInput = ''
+    }
+
 }
 
 let calculator = new Calculator()

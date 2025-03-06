@@ -1,6 +1,6 @@
 .cal {
     background-color: black;
-    height: 550px;
+    height: 650px;
     width: 425px;
     border-radius: 25px;
     padding: 10px;
@@ -23,11 +23,17 @@ button {
     font-weight: bold;
 }
 
-.firstRow,
 .secondRow, 
 .thirdRow,
-.fourthRow {
+.fourthRow,
+.fifthRow {
     margin: 5% 10%;
     display: flex;
     justify-content: space-evenly;
+}
+
+.firstRow {
+    display: flex;
+    align-self: flex-start;
+    margin: 5% 12%;
 }
